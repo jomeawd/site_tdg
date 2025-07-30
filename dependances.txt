@@ -1,0 +1,7 @@
+### Dépendances ###
+
+ - Bulma 0.9.4 : https://github.com/jgthms/bulma
+ - D3.js 7.9.0 : https://sourceforge.net/projects/d3js.mirror/
+ - Font Awesome 6.4.0: https://fontawesome.com/download
+
+-- JOBOT, 09/07/2025

@@ -1,0 +1,163 @@
+    <style>
+        /* Réduction globale de la taille du texte */
+        body {
+            font-size: 0.85rem;
+        }
+        
+        /* Style pour le tableau avec colonnes compactes */
+        .table-container { 
+            overflow-x: auto; 
+        }
+        
+        /* Style pour le tableau avec cellules compactes */
+        .table {
+            font-size: 0.8rem;
+            table-layout: fixed; /* Fixe la largeur des colonnes */
+        }
+        
+        /* Largeur fixe pour certaines colonnes */
+        .table th, .table td {
+            padding: 0.4em 0.5em;
+            white-space: normal; /* Permet le retour à la ligne */
+            vertical-align: top; /* Aligne le contenu en haut */
+        }
+        
+        /* Colonnes spécifiques avec largeurs contrôlées */
+        .col-id { 
+			width: 40px; 
+			min-width: 50px; 
+		}
+        .col-nom { 
+            width: 100px; 
+            max-width: 150px; 
+            overflow: hidden; 
+            text-overflow: ellipsis;
+            word-break: break-word; /* Force le retour à la ligne même sans espace */
+        }
+        .col-description { 
+            max-width: 150px; 
+            overflow: hidden; 
+            text-overflow: ellipsis;
+            word-break: break-word; /* Force le retour à la ligne même sans espace */
+        }
+        .col-serveur { 
+            width: 80px; 
+            max-width: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+        }
+        .col-planification { 
+            width: 90px; 
+            max-width: 120px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+        }
+        .col-criticite { 
+			width: 80px; 
+			max-width: 80px; 
+		}
+        .col-remarque { 
+            max-width: 120px; 
+            overflow: hidden; 
+            text-overflow: ellipsis;
+            word-break: break-word; /* Force le retour à la ligne même sans espace */
+        }
+        .col-actions { 
+			width: 150px;
+			min-width: 190px;
+		}
+        .col-actions-taches { 
+			width: 150px;
+			max-width: 90px;
+		}
+		.col-planification { 
+			width: 150px;
+			min-width: 150px;
+		}
+        
+        /* Style détails compacts */
+        .details-cell p {
+            margin-bottom: 0.2rem;
+            line-height: 1.2;
+            white-space: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+        }
+        
+        /* Badges et tags plus petits */
+        .tag {
+            font-size: 0.65rem;
+            height: 1.5em;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+        }
+        
+        /* Boutons d'action plus petits et compacts */
+        .buttons.are-small .button {
+            font-size: 0.7rem;
+            height: 1.8em;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+        }
+        
+        /* Classes de criticité */
+        .criticite-high {
+            background-color: #ffdddd;
+            color: #cc0000;
+            font-weight: bold;
+        }
+        .criticite-medium {
+            background-color: #ffffcc;
+            color: #b7950b;
+            font-weight: bold;
+        }
+        .criticite-low {
+            background-color: #ddffdd;
+            color: #006600;
+            font-weight: bold;
+        }
+        
+        .footer {
+            padding: 1.5rem 1rem;
+            font-size: 0.8rem;
+        }
+        
+        .calendar-container {
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+        }
+        
+        /* Titre plus petit */
+        .title {
+            font-size: 1.5rem;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+        }
+
+        /* Modal plus compacte */
+        .modal-card-title {
+            font-size: 1.2rem;
+        }
+        .modal-card-body {
+            padding: 1rem;
+			overflow-y: auto;
+			max-height: calc(100vh - 200px);
+        }
+        .modal-card-foot {
+            padding: 0.5rem;
+        }
+		.jaune {
+		  background-color:#ffd83e;
+		}
+		.rouge {
+		  background-color: #ff3860;
+		  color: #fff;
+		  border: none;
+		}
+		
+
+    </style>
